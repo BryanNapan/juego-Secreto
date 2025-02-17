@@ -1,5 +1,5 @@
-let numeroSecreto = generarNumeroSecreto();
-let intentos = 1;
+let numeroSecreto = 0;
+let intentos = 0;
 let numeroSorteados = [];
 let numeroMaximo = 10;
 
@@ -41,6 +41,8 @@ function limpiarcaja (){
 
 function generarNumeroSecreto() {
   let numeroGenerado =  Math.floor(Math.random()*numeroMaximo)+1;
+  console.log(numeroGenerado);
+  console.log(numeroSorteados);
   
   //si ya sorteamos todos los numeros
   if(numeroSorteados.length == numeroMaximo){
